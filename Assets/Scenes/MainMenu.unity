@@ -2541,7 +2541,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Texture: {fileID: 2800000, guid: f51d0a0102dd307429e7ba94ebe29a1a, type: 3}
+  m_Texture: {fileID: 2800000, guid: 1efa53230d1e9ee4a95b1c73d9eb0e61, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
