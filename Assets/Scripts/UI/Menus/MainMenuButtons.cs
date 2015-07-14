@@ -13,5 +13,9 @@ public class MainMenuButtons : MonoBehaviour {
         Application.Quit();
     }
 
+    public void NewGame()
+    {
+        Application.LoadLevel(SysConfig.NewGameSceneName);
+    }
 
 }
