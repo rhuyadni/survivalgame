@@ -38,6 +38,7 @@ public class SysConfig : MonoBehaviour
     public const string SaveExpStr = "0x10007";
     #endregion
 
+    #region Save Player Attributes
     public static void SavePlayer(string name, int health, int thirsty, int hungry, int stamina, int level, int exp) {
         PlayerPrefs.SetString(SaveNameStr, name);
         PlayerPrefs.SetInt(SaveHealthStr, health);
@@ -48,6 +49,9 @@ public class SysConfig : MonoBehaviour
         PlayerPrefs.SetInt(SaveExpStr, exp);
     }
 
+    #endregion
+
+    #region Load PlayerAttributes
     public string LoadPlayerName() {
         string tempName = PlayerPrefs.GetString(SaveNameStr);
         return tempName;
@@ -58,4 +62,41 @@ public class SysConfig : MonoBehaviour
 
         return tempLv;
     }
+
+    public int LoadPlayerHealth()
+    {
+        int tempval = PlayerPrefs.GetInt(SaveHealthStr);
+
+        return tempval;
+    }
+
+    public int LoadPlayerThirsty()
+    {
+        int tempval = PlayerPrefs.GetInt(SaveThirstyStr);
+
+        return tempval;
+    }
+
+    public int LoadPlayerHungry()
+    {
+        int tempval = PlayerPrefs.GetInt(SaveHungryStr);
+
+        return tempval;
+    }
+
+    public int LoadPlayerStamina()
+    {
+        int tempval = PlayerPrefs.GetInt(SaveStaminaStr);
+
+        return tempval;
+    }
+
+    public int LoadPlayerExp()
+    {
+        int tempval = PlayerPrefs.GetInt(SaveExpStr);
+
+        return tempval;
+    }
+
+    #endregion
 }
