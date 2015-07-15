@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class GameSettings : MonoBehaviour {
 
-    public Vector3 StartPosition = new Vector3(0, 0, 0);
+    public Vector3 StartPosition = new Vector3(290, 6, 320);
     public GameObject PlayerPrefab;
 
     //dont edit before this line

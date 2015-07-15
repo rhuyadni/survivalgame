@@ -27,4 +27,8 @@ public class SysConfig : MonoBehaviour
     public const float HungryPerLevel = 1.1f;
     public const float StaminaPerLevel = 1.1f;
     #endregion
+
+    #region SaveStrings
+
+    #endregion
 }
