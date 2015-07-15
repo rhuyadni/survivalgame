@@ -8,7 +8,7 @@ public class SysConfig : MonoBehaviour
     public const string IntroSceneName = "Intro";
     public const string MainMenuSceneName = "MainMenu";
     public const string NewGameSceneName = "LoadingNewGame";
-    public const string LoadGameSceneName = "LoadGame";
+    public const string LoadGameSceneName = "Game";
     #endregion
 
     #region Start Values
@@ -29,6 +29,33 @@ public class SysConfig : MonoBehaviour
     #endregion
 
     #region SaveStrings
-
+    public const string SaveNameStr = "0x10001";
+    public const string SaveHealthStr = "0x10002";
+    public const string SaveThirstyStr = "0x10003";
+    public const string SaveHungryStr = "0x10004";
+    public const string SaveStaminaStr = "0x10005";
+    public const string SaveLevelStr = "0x10006";
+    public const string SaveExpStr = "0x10007";
     #endregion
+
+    public static void SavePlayer(string name, int health, int thirsty, int hungry, int stamina, int level, int exp) {
+        PlayerPrefs.SetString(SaveNameStr, name);
+        PlayerPrefs.SetInt(SaveHealthStr, health);
+        PlayerPrefs.SetInt(SaveThirstyStr, thirsty);
+        PlayerPrefs.SetInt(SaveHungryStr, hungry);
+        PlayerPrefs.SetInt(SaveStaminaStr, stamina);
+        PlayerPrefs.SetInt(SaveLevelStr, level);
+        PlayerPrefs.SetInt(SaveExpStr, exp);
+    }
+
+    public string LoadPlayerName() {
+        string tempName = PlayerPrefs.GetString(SaveNameStr);
+        return tempName;
+    }
+
+    public int LoadPlayerLevel() {
+        int tempLv = PlayerPrefs.GetInt(SaveLevelStr);
+
+        return tempLv;
+    }
 }
