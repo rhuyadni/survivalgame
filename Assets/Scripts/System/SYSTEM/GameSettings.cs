@@ -7,15 +7,30 @@ public class GameSettings : MonoBehaviour {
     public Vector3 StartPosition = new Vector3(0, 0, 0);
     public GameObject PlayerPrefab;
 
-	void Start () {
-        if (StartPosition == Vector3.zero)
-            Debug.LogError("Please define a StartPosition in GameSettings gameObject");
+    //dont edit before this line
+    protected GameObject pc;
 
-        if (PlayerPrefab == null)
+	void Start () {
+        if (StartPosition == Vector3.zero) {
+            Debug.LogError("Please define a StartPosition in GameSettings gameObject");
+            return;
+        }
+
+        if (PlayerPrefab == null) {
             Debug.LogError("Please assign a CharacterPrefab in GameSettings gameObject");
+            return;
+        }
+
+        SpawnPlayer();
 	}
-	
-	// Update is called once per frame
+
+    void SpawnPlayer()
+    {
+        pc = GameObject.Instantiate(PlayerPrefab, StartPosition, Quaternion.identity) as GameObject;
+        pc.tag = "Player";
+        pc.name = "PlayerCharacter";
+    }
+
 	void Update () {
 	
 	}
