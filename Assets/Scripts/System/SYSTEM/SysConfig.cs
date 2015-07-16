@@ -52,46 +52,47 @@ public class SysConfig : MonoBehaviour
     #endregion
 
     #region Load PlayerAttributes
-    public string LoadPlayerName() {
+    public static string LoadPlayerName()
+    {
         string tempName = PlayerPrefs.GetString(SaveNameStr);
         return tempName;
     }
 
-    public int LoadPlayerLevel() {
+    public static int LoadPlayerLevel() {
         int tempLv = PlayerPrefs.GetInt(SaveLevelStr);
 
         return tempLv;
     }
 
-    public int LoadPlayerHealth()
+    public static int LoadPlayerHealth()
     {
         int tempval = PlayerPrefs.GetInt(SaveHealthStr);
 
         return tempval;
     }
 
-    public int LoadPlayerThirsty()
+    public static int LoadPlayerThirsty()
     {
         int tempval = PlayerPrefs.GetInt(SaveThirstyStr);
 
         return tempval;
     }
 
-    public int LoadPlayerHungry()
+    public static int LoadPlayerHungry()
     {
         int tempval = PlayerPrefs.GetInt(SaveHungryStr);
 
         return tempval;
     }
 
-    public int LoadPlayerStamina()
+    public static int LoadPlayerStamina()
     {
         int tempval = PlayerPrefs.GetInt(SaveStaminaStr);
 
         return tempval;
     }
 
-    public int LoadPlayerExp()
+    public static int LoadPlayerExp()
     {
         int tempval = PlayerPrefs.GetInt(SaveExpStr);
 
