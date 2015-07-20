@@ -241,6 +241,8 @@ Terrain:
     serializedVersion: 2
     rgba: 4286545791
   m_LegacyShininess: .078125
+  m_UseDefaultSmoothness: 1
+  m_DefaultSmoothness: 0
   m_MaterialTemplate: {fileID: 2100000, guid: 8657aa664e48a9b47be7c82fe463a751, type: 2}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: .0511999987
@@ -566,8 +568,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2107382450}
-  m_LocalRotation: {x: .258519053, y: .260052383, z: .0724821761, w: -.92751658}
-  m_LocalPosition: {x: 119.49408, y: 52.1869965, z: 250.156799}
+  m_LocalRotation: {x: -.450095296, y: .177987367, z: .0920622945, w: .870206475}
+  m_LocalPosition: {x: 450.58313, y: -701.426208, z: 581.467041}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
