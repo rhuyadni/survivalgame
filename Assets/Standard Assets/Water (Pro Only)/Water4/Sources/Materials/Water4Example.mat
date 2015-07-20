@@ -335,7 +335,7 @@ Material:
       data:
         first:
           name: _Foam
-        second: {r: .187999994, g: .816999972, b: 0, a: 0}
+        second: {r: .449000001, g: .460999995, b: 0, a: 0}
       data:
         first:
           name: _GAmplitude
@@ -351,15 +351,15 @@ Material:
       data:
         first:
           name: _GSpeed
-        second: {r: -3, g: 2, b: 1, a: 3}
+        second: {r: .100000001, g: .100000001, b: .100000001, a: .100000001}
       data:
         first:
           name: _GDirectionAB
-        second: {r: .469143569, g: .354051262, b: -.200000003, a: .100000001}
+        second: {r: .100000001, g: .100000001, b: .100000001, a: .100000001}
       data:
         first:
           name: _GDirectionCD
-        second: {r: .70338881, g: -.679999888, b: .717573524, a: -.200000003}
+        second: {r: .100000001, g: .100000001, b: .100000001, a: .100000001}
       data:
         first:
           name: _Displacement
