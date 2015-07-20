@@ -1,4 +1,11 @@
-﻿using UnityEngine;
+﻿/// SysConfig.cs
+/// Gabriel Dias Lopes, 20 july 2015
+/// This class is responsable of all game variables and configurations
+/// 
+/// WARNING: DONT CHANGE ANYTHING IF YOU DONT KNOW WHAT IT DO.
+/// Under development.
+
+using UnityEngine;
 using System.Collections;
 
 public class SysConfig : MonoBehaviour
@@ -22,10 +29,16 @@ public class SysConfig : MonoBehaviour
     #endregion
 
     #region Modifiers
-    public const float HealthPerLevel = 1.2f;
-    public const float ThirstyPerLevel = 1.1f;
-    public const float HungryPerLevel = 1.1f;
-    public const float StaminaPerLevel = 1.1f;
+    public const int HealthDecrease = 5;
+    public const int ThirstyDecrease = 1;
+    public const int HungryDecrease = 3;
+    public const int StaminaDecrease = 15;
+
+    public const int DecreaseRate = 3;
+    public const int DecreaseStaminaRate = 1;
+
+    public const int WalkSpeed = 5;
+    public const int RunSpeed = 20;
     #endregion
 
     #region SaveStrings
