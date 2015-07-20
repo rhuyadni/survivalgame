@@ -171,19 +171,19 @@ Terrain:
   m_TreeMaximumFullLODCount: 50
   m_DetailObjectDistance: 80
   m_DetailObjectDensity: 1
-  m_HeightmapPixelError: 5
-  m_SplatMapDistance: 1000
+  m_HeightmapPixelError: 1
+  m_SplatMapDistance: 2000
   m_HeightmapMaximumLOD: 0
   m_CastShadows: 1
   m_DrawHeightmap: 1
   m_DrawTreesAndFoliage: 1
   m_ReflectionProbeUsage: 1
-  m_MaterialType: 0
+  m_MaterialType: 3
   m_LegacySpecular:
     serializedVersion: 2
     rgba: 4286545791
   m_LegacyShininess: .078125
-  m_MaterialTemplate: {fileID: 0}
+  m_MaterialTemplate: {fileID: 2100000, guid: 8657aa664e48a9b47be7c82fe463a751, type: 2}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: .0511999987
   m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
@@ -222,7 +222,7 @@ MonoBehaviour:
   defaultTexture: {fileID: 2800000, guid: 07ec441dca83743ee8e1b259837acbd2, type: 3}
   toolModeInt: 2
   erosionTypeInt: 1
-  generatorTypeInt: 0
+  generatorTypeInt: 3
   isBrushOn: 0
   isBrushHidden: 0
   isBrushPainting: 0
@@ -253,9 +253,9 @@ MonoBehaviour:
   hydraulicEntropy: 0
   hydraulicDowncutting: .100000001
   tidalIterations: 25
-  tidalSeaLevel: 50
-  tidalRangeAmount: 5
-  tidalCliffLimit: 60
+  tidalSeaLevel: 58
+  tidalRangeAmount: 8
+  tidalCliffLimit: 65
   windIterations: 25
   windDirection: 0
   windForce: .5
@@ -266,16 +266,16 @@ MonoBehaviour:
   windSmoothing: .25
   tempTexture: {fileID: 0}
   slopeBlendMinAngle: 3.70253158
-  slopeBlendMaxAngle: 52.6898727
+  slopeBlendMaxAngle: 58.101265
   heightBlendPoints:
-  - .0727848113
-  - .113924049
+  - .0879999995
+  - .114
   - .167721525
   - .196202531
-  - .33227849
-  - .370253175
-  - .528481007
-  - .699367106
+  - .294303805
+  - .348101258
+  - .642405093
+  - .83544302
   gradientStyles: []
   voronoiTypeInt: 0
   voronoiType: 0
@@ -290,10 +290,10 @@ MonoBehaviour:
   perlinOctaves: 8
   perlinBlend: 1
   smoothBlend: 1
-  smoothIterations: 0
-  normaliseMin: 0
-  normaliseMax: 1
-  normaliseBlend: 1
+  smoothIterations: 1
+  normaliseMin: .0839999989
+  normaliseMax: .739000022
+  normaliseBlend: .0240000002
 --- !u!1001 &1504708645
 Prefab:
   m_ObjectHideFlags: 0
