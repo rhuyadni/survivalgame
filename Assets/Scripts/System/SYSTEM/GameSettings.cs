@@ -55,7 +55,11 @@ public class GameSettings : MonoBehaviour
             return;
         }
 
+        ShowCursorOnScreen(false);
+
         SpawnPlayer();
+
+
 	}
 
     void SpawnPlayer()
@@ -66,11 +70,16 @@ public class GameSettings : MonoBehaviour
     }
 
 	void Update () {
-	
+
 	}
 
     public static void SetName(string name) {
         tName = name;
+    }
+
+    void SetUiName()
+    {
+
     }
 
     public static void SetHealth(int curHp, int maxHp) {
@@ -86,4 +95,10 @@ public class GameSettings : MonoBehaviour
     public static void SetHungry(int curHu, int maxHu) {
         
     }
+
+    public static void ShowCursorOnScreen(bool val) {
+        Cursor.visible = val;
+    }
+
+
 }
